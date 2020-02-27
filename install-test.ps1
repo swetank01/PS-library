@@ -15,7 +15,7 @@ try {
 #choco install reportviewer2012 dotnet4.0 google-chrome vscode -y
 
 #Run 
-Invoke-Sqlcmd  -Database master -Query "CREATE LOGIN wsus-test-1 WITH PASSWORD = 'anonymous@2020!';" -ServerInstance localhost
+Invoke-Sqlcmd  -Database master -Query "CREATE LOGIN wsustest1 WITH PASSWORD = 'anonymous@2020!';" -ServerInstance localhost
 
 # Install SQL SERVER CMD
 Install-Module -Name SqlServer -Force AllowClover
