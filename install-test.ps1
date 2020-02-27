@@ -11,6 +11,12 @@ try {
   }
   
   iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
-  
+# Install Packages
 choco install reportviewer2012 dotnet4.0 google-chrome vscode -y
+
+#Run 
+Invoke-Sqlcmd  -Database master -Query "CREATE LOGIN wsus-test-1 WITH PASSWORD = 'anonymous@2020!';" -ServerInstance localhost
+
+# Install SQL SERVER CMD
+Install-Module -Name SqlServer -Force AllowClover
 
