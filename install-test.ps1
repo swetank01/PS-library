@@ -20,4 +20,4 @@ choco install reportviewer2012 dotnet4.0  vscode -y
 #Run SQL 
 Invoke-Sqlcmd  -Database master -Query "CREATE LOGIN wsustest1 WITH PASSWORD = 'anonymous@2020!';" -ServerInstance localhost
 
-
+#install chrome
