@@ -1,5 +1,5 @@
 
-Set-ExecutionPolicy Bypass -Scope Process -Force;
+#Set-ExecutionPolicy Bypass -Scope Process -Force;
 
 # Install SQL SERVER CMD
 # Install-Module -Name SqlServer -Force AllowClover
